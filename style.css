@@ -1,0 +1,66 @@
+/*comments*/
+/*anything with an h1 tag needs to come with the following properties*/
+h1{
+color: #2296C7; 
+font-size: 40px;
+font-family: Helvetica, sans-serif;
+text-align: center;
+}
+
+h2{
+    color: green; /*color code*/
+    font-family: Helvetica, sans-serif; /*Sets the table's text to use the Helvetica font, or another sans-serif font if Helvetica isn't available*/
+    text-align: right; /*align text to the right*/
+}
+
+h3{
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+p{
+   font-weight: 800; /*sets the boldness of text (100light - 900 ultra bold*/
+   /*text-decoration: line-through; /*draws a horizontal line through the middle of the text (not valid/correct)*/
+}
+
+table{
+    font-family: Helvetica, sans-serif;
+    border-collapse: collapse; /*Makes table borders merge instead of doubling between cells—creating a cleaner look.*/
+    border-width: 1px; /*Sets the thickness of the table's outer border to 1 pixel.*/
+    border-style: solid; /*Uses a solid line for the border*/
+    border-color: #2695A6; /*Colors the border a teal-blue shade*/
+}
+
+th{
+    font-weight: 800; /*Makes the header text extra bold*/
+    background-color: #2695A6; /*Gives the header cells a teal-blue background.*/
+    color: #ffffff; /*Changes the text color to white, for contrast and readability.*/
+}
+
+/*Find any <tr> (table row) element that has the class name alt. 
+ *Then, for every <td> (table cell) inside that specific <tr>, apply the background color #9AEFFC*/
+tr.alt td{
+    background-color: #9AEFFC;
+}
+
+ul{
+    /*list-style-type: circle; /*...makes the bullets a circle shape*/
+    list-style-image: url('images/pointerimage.png'); /*i resized image to 16px*/
+}
+
+ol{
+    list-style-type: upper-roman; /*instead of numbers, it's roman numerals*/
+}
+
+/*div compartment for only the links inside the 'menu bar' div*/ 
+#menu-bar a{
+    font-family: Helvetica, sans-serif;
+    text-decoration: none; /*removes the underline from a hyperlink*/
+    background-color: aquamarine; /*color of text bacground*/
+    padding: 5px; /*text neatly centered inside buttons*/
+}
+
+/*div compartment*/ 
+#menu-bar a:hover{ /*pseudoclass: does this when user hovers mouse on hyperlink*/
+    background-color: aqua;
+    color: #ffffff;
+}
